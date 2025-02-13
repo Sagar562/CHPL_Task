@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // using btn name
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".div1").hide();
+            });
+
+
+        });
+
+        // using class name
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".demo").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $(".p1").mouseup(function(){
+            alert("Mouse up over p1!");
+            });
+        });
+
+        $(document).ready(function(){
+            $('img').click(function(){
+                $('img').hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $('.5thBtn').click(function(){
+                $('.a').fadeToggle();
+                $('.b').fadeToggle('slow');
+                $('.c').fadeToggle(2000);
+            })
+        })
+
+        // 6th
+        $(document).ready(function(){
+            $('.slideToggle').click(function(){
+                $('.6th').slideToggle();
+            });
+        });
+        // 7th
+        $(document).ready(function(){
+            $('.slideDown').click(function(){
+                $('.7th').slideDown();
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 1st -->
+    <div class="div1">
+        <h2>This is a heading</h2>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <button class="btn1">Click me to hide paragraphs</button>
+
+    </div>
+
+   <!-- 2nd -->
+    <div class="demo">
+        <h2>select using class</h2>
+        <button class="btn">Click me</button>
+    </div>
+
+    <!-- 3rd -->
+    <div id="3rd">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgCPQmyPHrOWxnUvbmQIRwOipjW8woZUreA&s" alt="">
+    </div>
+
+    <!-- 4th -->
+    <div>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque temporibus magnam facere tenetur fugit dicta! Ea praesentium rem architecto.</p>
+    </div>
+
+    <!-- 5th -->
+    <div>
+        <button class="5thBtn">click</button>
+        <div class="a" style="width: 50px; height: 50px; background-color: aqua;"></div>
+        <div class="b" style="width: 50px; height: 50px; background-color: brown;"></div>
+        <div class="c" style="width: 50px; height: 50px; background-color: skyblue;"></div>
+    </div>
+    <hr>
+    
+    <!-- 6th -->
+    <div>
+        <h1 class="slideToggle">Slide up</h1>
+        
+        <p style="background-color: antiquewhite;" class="6th">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quo adipisci voluptatibus rerum distinctio sit provident saepe ut tempora eos maiores rem sequi, earum dolores repellat architecto vel porro commodi, veniam natus ipsum? Animi facilis ullam tempora quam adipisci fugiat cupiditate id quae eos ad officiis labore magni cum, quis distinctio quaerat, nesciunt omnis inventore rerum officia pariatur aperiam. Porro eos maiores quam autem. Repellendus mollitia distinctio exercitationem ipsa error repudiandae quibusdam sapiente. Tenetur quaerat libero id corrupti fugit, ad laudantium velit aliquid quos et error incidunt reprehenderit fuga asperiores veniam voluptate natus porro, delectus omnis vitae quisquam! Eaque beatae pariatur, hic animi consectetur at rem maxime eveniet fugiat sint dolorem .</p>
+
+    </div>
+
+    <!-- 7th -->
+    <div>
+        <h2 class="slideDown">slide down</h2>
+        <p class="7th" style="background-color:chartreuse; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum sit debitis recusandae ipsa repudiandae consequuntur, deserunt nostrum quod soluta, eius aspernatur odio illum fugit dolorem ab error neque nobis.</p>
+    </div>
+
+
+</body>
+</html>
