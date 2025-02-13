@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            let cnt = 0;
+
+            $("#addButton").click(function(){
+        
+                let getValue = $("#inputValue").val();
+                // console.log(getValue);
+                if (getValue .trim() !== '')
+                {
+                    let store = $('<div class="item"></div>');
+                    store.text(getValue);   
+
+                    let close_btn = $('<button type="button" class="btn-close"></button>')
+
+                    store.append(close_btn);
+
+                    $("#itemList").append(store);
+                    cnt++;
+
+                    $('#itemCount').text('Item Count: ' + cnt);
+
+
+                    $('#inputValue').val("");   
+                }
+                
+            });
+            // remove
+            $(document).on("click", ".btn-close", function() {
+            // remove the closest div
+            $(this).parent('.item').remove();
+            
+            // update count
+            $('#itemCount').text('Item Count: ' + --cnt);
+            });
+         
+        });
+      </script>
+
+</head>
+<body>
+
+     <!-- Input and Add Item Button -->
+  <input type="text" id="inputValue" class="form-control mb-3" placeholder="Enter a value" style="width: 200px;">
+  <button id="addButton" class="btn btn-primary mb-3">Add Item</button>
+
+  <!-- Display Items -->
+  <div id="itemList" class=""></div>
+
+  <!-- Item Count -->
+  <div id="itemCount" class="mt-3">Item Count:0 </div>
+
+
+</body>
+</html>
