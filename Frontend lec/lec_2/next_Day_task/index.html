@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:
+    ANd9GcTu8DGs15SG9WeqaunMgdfekvhYF4_VgmxxEA&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- container -->
+     <div id="container">
+        <!-- navBar -->
+        <nav>
+            <div id="navBarMainDiv">
+                <!-- left part -->
+                <div id="navBarLeftPart" style="position: relative;">
+                    <i class="fa fa-bars" aria-hidden="true"></i>   
+                    <input type="text" name="Search" id="navBarSearchInput" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true" style="right: 8px; position: absolute;color: black;"></i>
+                </div>
+                <!-- right part -->
+                <div id="navBarRightPart" style="position: relative;">
+
+                    <div style="position: absolute; top: 0; z-index: 1; text-align: center; left: 10px; color:white; border: 1px gray solid; border-radius: 100%; height: 12px; width: 15px;">1</div>
+                    <div style="position: absolute; top: 0; right: 70px; font-size: smaller; z-index: 1; text-align: center; color:white; border: 1px gray solid; border-radius: 100%; height: 12px; width: 15px;">3</div>
+
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle-o" aria-hidden="true" style="width: 30px;"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section -->
+        <section id="sectionID">
+            <!-- heading -->
+            <h1>Registration</h1>
+
+            <form action="thankYou.html">
+
+                <div id="mainDiv">
+                    <!-- Form Div -->
+                    <div id="formDiv">
+                        <!-- leftSide -->
+                        <div>
+                            <!-- Fname -->
+                            <div class="nameAndInput">
+                                <label for="Fname">First Name<span class="star">*</span></label> 
+                                <input type="text" name="Fname" required id="Fname" class="formInput">
+                            </div>
+                            <!-- Lname -->
+                            <div class="nameAndInput">
+                                <label for="Lname">Last Name<span class="star">*</span></label> 
+                                <input type="text" name="Lname" required id="Lname" class="formInput">
+                            </div>
+                            <!-- Gender -->
+                            <div id="genderID">
+                                <label for="Gender">Gender<span class="star">*</span></label>
+                                <input type="radio" name="radio1" required id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="radio1" required id="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <!-- DOB -->
+                            <div class="nameAndInput">
+                                <label for="DOB">Date Of Birth</label>
+                                <input type="date" name="" id="" class="formInput">
+                            </div>
+                            <!-- Designation -->
+                            <div class="nameAndInput">
+                                <label for="Designation">Designation</label>
+                                <input type="text" name="" id="" class="formInput">
+                            </div>
+                            <!-- Company Name -->
+                            <div class="nameAndInput">
+                                <label for="CompanyName">Company Name<span class="star">*</span></label>
+                                <input type="text" name="" required id="" class="formInput">
+                            </div>
+                            <!-- City -->
+                            <div class="nameAndInput">
+                                <label for="City">City<span class="star">*</span></label>
+                                <select name="DropDown" id="" required class="formInput">
+                                    <option value="" selected disabled>--City--</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Rajkot">Rajkot</option>
+                                    <option value="Gandhi Nagar">Gandhi Nagar</option>
+                                </select>
+                            </div>
+                            <!-- Membership number -->
+                            <div class="nameAndInput">
+                                <label for="MembershipNumber">Membership Number</label>
+                                <input type="text" name="" id="" class="formInput">
+                            </div>
+                            <!-- Company email -->
+                            <div class="nameAndInput">
+                                <label for="CompanyEmail">Company Email</label>
+                                <input type="text" name="" id="" class="formInput">
+                            </div>
+                            <!-- Brochure -->
+                            <div class="nameAndInput">  
+                                <label for="Brochure">Brochure</label>
+                                <input type="file" name="" id="" placeholder="Browse" class="formInput">
+                            </div>
+                            <!-- Describe More -->
+                            <div class="nameAndInput">
+                                <label for="DescribeMore">Describe More</label>
+                                <input type="text" name="" id="" class="formInput">
+                            </div>
+                            <!-- Refer Type -->
+                            <div class="nameAndInput">
+                                <label for="Refer Type">Refer Type<span class="star">*</span></label>
+                                <select name="" id="" required class="formInput">
+                                    <option value="" selected disabled>--Select--</option>
+                                    <option value="Software Developer">Software Developer</option>
+                                    <option value="HR">HR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- rightSide -->
+                        <div>
+                            <!-- Mname -->
+                            <div class="nameAndInput ">
+                                <label for="Mname">Middle Name</label> 
+                                <input type="text" name="Mname" id="Mname" class="formInput">
+                            </div>
+                            <!-- Mobile No -->
+                            <div class="nameAndInput">
+                                <label for="Mobile Number">Mobile Number<span class="star">*</span></label>
+                                <!-- two parts -->
+                                <div id="mobileNoTwoParts">
+                                    <div>
+                                        <select name="" required id="" class="mobileNumInput">
+                                            <option value="+91">India (+91)</option>
+                                            <option value="+1">Usa (+1)</option>
+                                            <option value="+12">**** (+12)</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="text" required maxlength="10" name="" id="" class="mobileNumInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blood group -->
+                            <div class="nameAndInput">
+                                <label for="Blood Group">Blood Group</label>
+                                <select name="" id="" class="formInput">
+                                    <option value="" disabled selected>--Select--</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                            </div>
+                            <!-- Email Id -->
+                            <div class="nameAndInput">
+                                <label for="emailID">Email ID</label>
+                                <input type="email" name="" id="" class="formInput">
+                            </div>
+                            <!-- Photo -->
+                            <div class="nameAndInput">
+                                <label for="Photo">Photo</label>
+                                <input type="file" name="" id="" class="formInput">
+                            </div>
+                            <!-- Business -->
+                            <div class="nameAndInput">
+                                <label for="Business">Business</label>
+                                <select name="" id="" class="formInput">
+                                    <option value="" selected disabled>--Select--</option>
+                                    <option value="Software Developer">Software Developer</option>
+                                </select>
+                            </div>
+                            <!-- Area -->
+                            <div class="nameAndInput">
+                                <label for="Area">Area<span class="star">*</span></label>
+                                <select name="" required id="" class="formInput">
+                                    <option value="" selected disabled>--Select--</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                </select>
+                            </div>
+                            <!-- Company Contact number -->
+                            <div class="nameAndInput">
+                                <label for="Company Contact Number">Company Contact Number</label>
+                                <input type="text" name="" id="" class="formInput"> 
+                            </div>
+                            <!-- company logo -->
+                            <div class="nameAndInput">
+                                <label for="Company logo">Company Logo</label>
+                                <input type="file" name="" id="" class="formInput">
+                            </div>
+                            <!-- Website -->
+                            <div class="nameAndInput">
+                                <label for="Website">Website</label>
+                                <input type="text" name="" id="" class="formInput">
+                            </div>
+                            <!-- Address -->
+                            <div class="nameAndInput">
+                                <label for="Address">Address<span class="star">*</span></label>
+                                <input type="text"  name="" id="" class="formInput">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- lower part -->
+                    <div id="lowerPart">
+                        <div id="lowerBox">
+                            Oops somethig went wrong
+                        </div>
+                        <!-- error headline -->
+                        <div id="lastHeadline">
+                            <div>
+                                <h2>Oops somethig went wrong</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quaerat.</p>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <div id="lastBtn">
+                        <input type="submit" name="Submit" id="submitBtn">
+                    </div>
+            </div>
+              
+            </form>
+           
+
+            <iframe width="400" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+
+            
+            <iframe width="400" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+            </audio>
+        </section>
+     </div>
+
+</body>
+</html>
+

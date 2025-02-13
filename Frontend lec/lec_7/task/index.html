@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        tbody {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body class="overflow-x-hidden" data-bs-spy="scroll">
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#contact_us">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- offCanvas -->
+    <div class="offcanvas fade w-25 h-100" id="myCanvas">
+            <!-- header -->
+            <div class="offcanvas-header">
+                <h2>Tours</h2>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!-- body -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">J&k</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Junagadh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Saputara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shimla</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#goaId" class="nav-link dropdown-toggle"  data-bs-toggle="collapse">
+                            Uttarakhand
+                        </a>
+                        <ul class="collapse nav flex-column" id="goaId">
+                            <li class="nav-item">
+                                <a href="https://www.google.com/search?sca_esv=17212dbc4d09d461&sxsrf=ADLYWILwkntJ3K8LDU4X4LvsbMeuczUYew:1737364693044&q=Rishikesh&si=ACC90nzx_D3_zUKRnpAjmO0UBLNxnt7EyN4YYdru6U3bxLI-L7f3AE5Uwe-2XtSnAmb_OXnfgxxosPGape4lAKmEVvu1whvQnA%3D%3D&sa=X&ved=2ahUKEwjd7P7q-4OLAxWXQ2cHHeMeDfoQs4ILegUIjQEQAw" class="nav-link" target="_blank">
+                                    Rishikesh
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Mussoorie
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel slide" data-bs-ride="carousel" id="demo">
+        
+        <!-- dot buttons -->
+        <div class="carousel-indicators">   
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- slider imges -->
+        <div class="carousel-inner">
+            <!-- 1 -->
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1j6iavuDkm2CO20EYdzAq28ZnCYFOJfbZqQ&s" class="object-fit-contain w-100"alt="">
+            </div>
+            <!-- 2 -->
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyWXWzD5nlqcYnQG0SAayhTOnujcp_3BPkqUwMURZ2UAP3KL1ZUa-S-xptUQXGOHx43wY&usqp=CAU" class="w-100" alt="">
+            </div>
+            <!-- 3 -->
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9fA5Q_qaK3Mm7Cz0SHnK1WBR6IutjRbBWyqCyTt-_bmNGi3UPQ-LIN394oHoDQrxZ9E&usqp=CAU" class="w-100" alt="">
+            </div>
+        </div>
+
+        <!-- left right button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- model -->
+    <div class="w-100 mt-5 text-center">
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalID">
+            Terms and conditions*
+        </button>
+
+        <div class="modal fade" id="modalID">
+            <div class="modal-dialog modal-dialog-scrollable h-75">
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Please Note</h3>
+                        <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+
+                    <!-- body -->
+                    <div class="modal-body">
+                        <p>By using this website, you agree to comply with and be bound by the following terms and conditions:</p>
+                            <ul>
+                                <li><strong>1. Acceptance of Terms:</strong> By accessing and using our website, you agree to be bound by these Terms and Conditions and any applicable laws.</li>
+                                <li><strong>2. Changes to Terms:</strong> We reserve the right to modify these Terms and Conditions at any time. All changes will be posted on this page with an updated revision date.</li>
+                                <li><strong>3. Use of Content:</strong> All content on this website, including text, images, logos, and software, is the property of the company and may not be used without permission.</li>
+                                <li><strong>4. Privacy Policy:</strong> Your use of this website is governed by our <a href="#">Privacy Policy</a>.</li>
+                                <li><strong>5. Limitation of Liability:</strong> We are not liable for any damages arising from the use or inability to use our services.</li>
+                                <li><strong>6. Governing Law:</strong> These Terms are governed by the laws of the jurisdiction in which the company operates.</li>
+                                <li><strong>7. Contact Information:</strong> For any questions regarding these Terms and Conditions, please contact us at support@example.com.</li>
+                            </ul>
+                        <p>By continuing to use this website, you acknowledge that you have read, understood, and agree to these Terms and Conditions.</p>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal" type="button">Accept</button>
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row mt-4">
+
+        <div class="col-1">
+
+        </div>
+
+        <div class="col-10 mt-2">
+            <h2 class="text-center">Images</h2>
+
+            <div class="d-flex flex-wrap mt-5 justify-content-between" id="accordion">
+
+                <div class="card bg-light rounded-5" style="width: 320px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPXe_J2voyIFizYFacofxizgQoR8XGTCz5w&s" class="object-fit-cover rounded-top-5" width="320px" data-bs-toggle="collapse" data-bs-target="#img1" alt="">
+
+                    <div class="card-header">
+                        <h4 class="card-title">kedarkantha</h4>
+                        <p class="card-subtitle">Trekking packges in kedarkantha</p>
+                    </div>
+                                        
+                    <div class="card-body collapse" id="img1" data-bs-parent="#accordion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit est voluptas error similique odio natus libero quos officia provident culpa?</p>
+                    </div>
+
+                </div>
+                
+                <div class="card bg-light rounded-5" style="width: 320px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBMy3de6Y2epoM5yMMwMKN5zZfPOW0UPcSw&s" class="object-fit-cover rounded-top-5" data-bs-toggle="collapse" data-bs-target="#img2" width="320px" alt="">
+
+                    <div class="card-header">
+                        <h4 class="card-title">spiti valley</h4>
+                        <p class="card-subtitle">Trekking packges in spiti valley</p>
+                    </div>
+
+                    <div class="card-body collapse" data-bs-parent="#accordion" id="img2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas aperiam molestias magni distinctio vero! Similique veniam magnam veritatis reiciendis, illum quos sit temporibus non magni at in, expedita nostrum.</p>
+                    </div>  
+                    
+                </div>
+
+                <div class="card bg-light rounded-5" style="width: 320px;">
+                    
+                    <img src="https://media1.thrillophilia.com/filestore/8c4endyet4gv16wx0d1otkevk90l_pexels-saikat-ghosh-914128.jpg?w=1440&dpr=2" width="320px" class="object-fit-cover rounded-top-5" data-bs-toggle="collapse" data-bs-target="#img3" alt="">
+
+                    <div class="card-header">
+                        <h4 class="card-title">Dalhousie</h4>
+                        <p class="card-subtitle">Trekking packges in Dalhousie</p>
+                    </div>
+                    
+                    <div class="card-body" id="img3" data-bs-parent="#accordion">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim praesentium est expedita sapiente autem voluptas non provident excepturi adipisci rem, iste unde et repellat voluptatibus quia earum similique obcaecati nihil!</p>
+                    </div>  
+                </div>
+
+            </div>
+
+
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-primary" data-bs-target="#myCanvas" data-bs-toggle="offcanvas">For more tours</button>
+            </div>
+
+            <!-- Our Partners -->
+            <div class="mt-5 mb-5">
+                <h2 class="text-center">Our Partners</h2>
+
+                <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 gap-3">
+                    <img src="https://media1.thrillophilia.com/TajHotelIcon.png?w=50&dpr=1" class="object-fit-contain" alt="">
+                    <img src="https://media1.thrillophilia.com/HolidayInnHotelIcon.png?w=50&dpr=1" class="object-fit-contain" alt="">
+                    <img src="https://media1.thrillophilia.com/MarriottHotelIcon.png?w=50&dpr=1" class="object-fit-contain" alt="">
+                    <img src="https://media1.thrillophilia.com/JWHotelICon.png?w=70&dpr=1" class="object-fit-contain" alt="">
+                    <img src="https://media1.thrillophilia.com/4SeasonHotelIcon.png?w=70&dpr=1" class="object-fit-contain" alt="">
+                    <img src="https://media1.thrillophilia.com/WHotelIcon.png?w=50&dpr=1"class="object-fit-contain" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1">
+
+        </div>
+    </div>
+    
+    <hr>
+
+    <!-- footer -->
+    <table class="table table-borderless mt-5 small">
+        <thead>
+            <tr>
+                <th>ABOUT THRILLOPHILIA</th>
+                <th>FOR SUPPLIERS</th>
+                <th>FOR TRAVELLERS</th>
+                <th>FOR BRANDS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    ABOUT US
+                </td>
+                <td>
+                    LIST YOUR ACTIVITIES
+                </td>
+                <td>
+                    GIFT AN EXPERIENCE
+                </td>
+                <td>
+                    PARTNER WITH US
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    WE ARE HIRING
+                </td>
+                <!-- <td></td>
+                <td></td> -->
+                <td>
+                    DESTINATION MARKETING
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    THRILLOPHILIA REVIEWS
+                </td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>
+                    TERMS & CONDITIONS
+                </td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>
+                    PRIVACY POLICIES
+                </td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>
+                    COPYRIGHT POLICIES
+                </td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
